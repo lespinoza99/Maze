@@ -99,6 +99,8 @@ function pathOut(maze, start){
     //This while loop will continue to run as long as the priority queue contains a value or until our if check breaks the loop and returns the end node
     while(!Queue.isEmpty()){
        
+        //To make this work with color fill you need to add the if checks that
+        // prevent the maze from going out of bounds
         current = Queue.removeMin();
         
         console.log('Current.path!')

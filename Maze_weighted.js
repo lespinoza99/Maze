@@ -98,6 +98,7 @@ function pathOut(maze, start, end) {
     while (!Queue.isEmpty()) {
         //Here we are using our removeMin function to find the node with the smallest heursitic  and assigning it to current
         current = Queue.removeMin();
+        //console.log(maze)
 
         //This if check will break out of the loop and return if we arrive at the end node
         if (current.node[0] == end[0] && current.node[1] == end[1]) {
